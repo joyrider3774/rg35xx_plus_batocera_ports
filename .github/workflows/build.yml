@@ -101,11 +101,13 @@ jobs:
       - if: ${{ matrix.binarycopy != ''}}
         name: copy binary
         run: |
+          mkdir -p artifact_dir/${{ matrix.output }}
           cp "tmp/${{ matrix.binarycopy}}" "./artifact_dir/${{ matrix.output }}/${{ matrix.binarycopy }}"
       
       - if: ${{ matrix.assetscopy != ''}}
         name: copy assets
         run: |
+          mkdir -p artifact_dir/${{ matrix.output }}
           cp -Rf "tmp/${{ matrix.assetscopy}}" "./artifact_dir/${{ matrix.output }}"
       
       - name: Store build

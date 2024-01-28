@@ -25,7 +25,7 @@ jobs:
       - name: get SDK
         uses: wei/wget@v1
         with:
-          args: -O trimui-sdk.tar.gz https://github.com/joyrider3774/sdks/releases/latest/download/rg35xx_plus.tgz
+          args: -O rg35xx_plus.tgz https://github.com/joyrider3774/sdks/releases/latest/download/rg35xx_plus.tgz
 
       - name: setup SDK
         run: |

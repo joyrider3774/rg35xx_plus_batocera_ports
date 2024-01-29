@@ -10,6 +10,9 @@ For example if you open `checkers - RG35XX_Plus_Batocera_cfw.zip` there will be 
 `checkers` and an sh file named `Checkers.sh` you need to copy that folder to the `roms/ports` folder of your rg35xx plus Batocera Custom Firmware.
 there is also an `images` folder included with 2 images per game, one for the logo and one screenshot. You need to edit the games metadata manually
 and select the images in order to view them.
+The playdate games will start up in 1 bit graphics mode, meaning black and white. To switch to the colored graphics press the `X` button. The game
+will rebooot and use colored graphics and remember this for the next time you start the game. Some games have multiple graphic options like `Waternet`
+and `Puztrix` if you press `X` again you will cycle through all the available options, each time restarting the game.
 
 ## Generic Game controls
 

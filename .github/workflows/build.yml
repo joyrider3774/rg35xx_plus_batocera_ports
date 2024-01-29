@@ -95,7 +95,7 @@ jobs:
       
       - name: copy metadata
         run: |
-          cp -f "tmp/metadata/rg35xxplusbatocera/"* "./artifact_dir/"
+          cp -rf "tmp/metadata/rg35xxplusbatocera/"* "./artifact_dir/"
       
       
       - if: ${{ matrix.binarycopy != ''}}

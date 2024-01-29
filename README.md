@@ -8,17 +8,19 @@ In general on the rg35xx plus running Batocera Custom Firmware.
 Extract the zips you download from the [Release Section](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases) in the `roms/ports` folder.
 For example if you open `checkers - RG35XX_Plus_Batocera_cfw.zip` there will be a folder inside, in this example named
 `checkers` and an sh file named `Checkers.sh` you need to copy that folder to the `roms/ports` folder of your rg35xx plus Batocera Custom Firmware.
+there is also an `images` folder included with 2 images per game, one for the logo and one screenshot. You need to edit the games metadata manually
+and select the images in order to view them.
 
 ## Generic Game controls
 
 | Key | Action |
 | ------ | ------ |
-| Dpad or Joystick | movement, selecting in menu's etc |
+| Dpad | movement, selecting in menu's etc |
 | A | A Button as mentioned in the games for functionality of each game please check each game's repository |
 | B | B Button as mentioned in the games for functionality of each game please check each game's repository |
 | LB | In Playdate games simulate crank move backwards movement, in my games usually used in the level editors to select previous piece. In other games consult game's repository to know the functionality |
 | RB | In Playdate games simulate crank move forwards movement, in my games usually used in the level editors to select next piece. In other games consult game's repository to know the functionality |
-| Y | In (Playdate) games starting up in black and white, reboot and use colored version of graphics, some games have multiple colored graphics so you can press it again to see more options. The button basically makes you cycle through all possibilities |
+| X | In (Playdate) games starting up in black and white, reboot and use colored version of graphics, some games have multiple colored graphics so you can press it again to see more options. The button basically makes you cycle through all possibilities |
 | Menu | Quit game and return to menu |
 
 ---

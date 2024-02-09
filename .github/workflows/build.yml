@@ -30,7 +30,7 @@ jobs:
       - name: setup SDK
         run: |
           tar -xzvf ./rg35xx_plus.tgz
-          sudo mv ./rg35xx /opt/
+          sudo mv ./arm-buildroot-linux-gnueabihf_sdk-buildroot /opt/
 
       - if: ${{ matrix.buildtype == 'playdate'}}
         name: Checkout Playdate SDL2 Api Sources

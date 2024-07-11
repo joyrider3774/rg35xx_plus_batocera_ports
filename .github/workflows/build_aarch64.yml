@@ -20,7 +20,7 @@ jobs:
           - { buildtype: 'vanilla',  repo: 'joyrider3774/RetroTime',           output: 'retrotime',   binarycopy: 'retrotime', assetscopy: 'retrotimefs', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CXX=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-g++ NOX11=1 SDL2CONFIG=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config LDLIBS="`/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config --libs` -lSDL2_image -lSDL2_ttf -lSDL2_mixer -lSDL2_gfx -lSDL2 -lpthread -lstdc++" "DEFINES=-DRG35XX_PLUS_BATOCERA" FULLMENUTRANSPARANCY=1'}
           - { buildtype: 'vanilla',  repo: 'joyrider3774/Znax',                output: 'znax',        binarycopy: 'znax',      assetscopy: 'znaxfs',      downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CXX=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-g++ NOX11=1 SDL2CONFIG=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config LDLIBS="`/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config --libs` -lSDL2_image -lSDL2_ttf -lSDL2_mixer -lSDL2_gfx -lSDL2 -lpthread -lstdc++" "DEFINES=-DRG35XX_PLUS_BATOCERA"'}
     
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: get SDK
         uses: wei/wget@v1

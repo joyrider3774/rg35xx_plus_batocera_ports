@@ -76,7 +76,7 @@ jobs:
       - if: ${{ matrix.buildtype == 'playdate'}}   
         name: Build Game Playdate
         run: |
-          make PLATFORM=rg35xx_plus_batocera_aarch64 ${{matrix.makecommand }}
+          make PLATFORM=rg35xx_plus_batocera_aarch64 DEFAULTSOURCEDIR=1 ${{matrix.makecommand }}
        
       - if: ${{ matrix.buildtype == 'vanilla'}}   
         name: Build Game Vanilla

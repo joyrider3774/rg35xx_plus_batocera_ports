@@ -87,13 +87,12 @@ jobs:
           
       - name: prepare artificat directory
         run: |
-          mkdir artifact_dir
-          mkdir "artifact_dir/.${{ matrix.output }}"
+          mkdir -p "artifact_dir/.${{ matrix.output }}"
      
       - if: ${{ matrix.buildtype == 'playdate'}}
         name: Move Source Folder
         run: |
-          mv Source "./artifact_dir/.${{ matrix.output }}"
+          cp -r Source/. "./artifact_dir/.${{ matrix.output }}/"
       
       - name: create ${{matrix.output}}.sh general stuff
         run: |
@@ -102,21 +101,9 @@ jobs:
           echo "HOME=\"\$(GET_VAR \"device\" \"board/home\")\"" >> "./artifact_dir/${{matrix.output}}.sh"
           echo "export HOME"  >> "./artifact_dir/${{matrix.output}}.sh"
           
-          echo "if [ \"\$(GET_VAR \"global\" \"boot/device_mode\")\" -eq 1 ]; then"  >> "./artifact_dir/${{matrix.output}}.sh"
-          echo "SDL_HQ_SCALER=2" >> "./artifact_dir/${{matrix.output}}.sh"          
-          echo "SDL_ROTATION=0" >> "./artifact_dir/${{matrix.output}}.sh"          
-          echo "SDL_BLITTER_DISABLED=1" >> "./artifact_dir/${{matrix.output}}.sh" 
-          echo "else" >> "./artifact_dir/${{matrix.output}}.sh"
-          echo "SDL_HQ_SCALER=\"\$(GET_VAR \"device\" \"sdl/scaler\")\"" >> "./artifact_dir/${{matrix.output}}.sh"
-          echo "SDL_ROTATION=\"\$(GET_VAR \"device\" \"sdl/rotation\")\"" >> "./artifact_dir/${{matrix.output}}.sh"
-          echo "SDL_BLITTER_DISABLED=\"\$(GET_VAR \"device\" \"sdl/blitter_disabled\")\"" >> "./artifact_dir/${{matrix.output}}.sh"
-          echo "fi" >> "./artifact_dir/${{matrix.output}}.sh"
-          echo "export SDL_HQ_SCALER SDL_ROTATION SDL_BLITTER_DISABLED" >> "./artifact_dir/${{matrix.output}}.sh"
-
-          echo "SET_VAR \"system\" \"foreground_process\" \"${{ matrix.output }}\"" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "SETUP_SDL_ENVIRONMENT"  >> "./artifact_dir/${{matrix.output}}.sh"
          
-          echo "SDL_GAMECONTROLLERCONFIG=\$(grep \"muOS-Keys\" \"/opt/muos/device/current/control/gamecontrollerdb_retro.txt\")" >> "./artifact_dir/${{matrix.output}}.sh"
-          echo "export SDL_GAMECONTROLLERCONFIG" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "SET_VAR \"system\" \"foreground_process\" \"${{ matrix.output }}\"" >> "./artifact_dir/${{matrix.output}}.sh"
           
           echo "GAMEFOLDER=\$(dirname \"\$0\")/.${{matrix.output}}" >> "./artifact_dir/${{matrix.output}}.sh"
           echo "cd \"\$GAMEFOLDER/bin\"" >> "./artifact_dir/${{matrix.output}}.sh"
@@ -127,13 +114,13 @@ jobs:
       - if: ${{ matrix.binarycopy != ''}}
         name: copy binary
         run: |
-          mkdir -p artifact_dir/.${{ matrix.output }}
+          mkdir -p "artifact_dir/.${{ matrix.output }}"
           cp "tmp/${{ matrix.binarycopy}}" "./artifact_dir/.${{ matrix.output }}/${{ matrix.binarycopy }}"
       
       - if: ${{ matrix.assetscopy != ''}}
         name: copy assets
         run: |
-          mkdir -p artifact_dir/.${{ matrix.output }}
+          mkdir -p "artifact_dir/.${{ matrix.output }}"
           cp -Rf "tmp/${{ matrix.assetscopy}}" "./artifact_dir/.${{ matrix.output }}"
       
       - name: Store build

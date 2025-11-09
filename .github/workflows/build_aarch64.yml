@@ -87,15 +87,16 @@ jobs:
           
       - name: prepare artificat directory
         run: |
-          mkdir -p artifact_dir/.${{ matrix.output }}
+          mkdir -p artifact_dir
      
       - if: ${{ matrix.buildtype == 'playdate'}}
         name: Move Source Folder
         run: |
-          cp -Rf ./Source/. "./artifact_dir/.${{ matrix.output }}/"
+          mv Source "./artifact_dir/.${{ matrix.output }}"
       
       - name: create ${{matrix.output}}.sh general stuff
         run: |
+          mkdir -p artifact_dir/.${{ matrix.output }}
           echo "#!/bin/sh" > "./artifact_dir/${{matrix.output}}.sh"
           echo ". /opt/muos/script/var/func.sh" >> "./artifact_dir/${{matrix.output}}.sh"
           echo "HOME=\"\$(GET_VAR \"device\" \"board/home\")\"" >> "./artifact_dir/${{matrix.output}}.sh"

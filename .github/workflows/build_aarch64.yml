@@ -9,17 +9,17 @@ jobs:
     strategy:
       matrix:
         include:
-          - { buildtype: 'playdate', repo: 'joyrider3774/formula1_playdate',   output: 'formula_1',   binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: 'FORMULA1_PLAYDATE_CODEKEY', codesecretfile: 'src/codekey.h', makecommand: '"SRC_C_DIR=src/srcgame src/srcgame/scoresubmit" SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
-          - { buildtype: 'playdate', repo: 'joyrider3774/checkers_playdate',   output: 'checkers',    binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CPP_BUILD=1 SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
-          - { buildtype: 'playdate', repo: 'joyrider3774/dynamate_playdate',   output: 'dynamate',    binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CPP_BUILD=1 SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
-          - { buildtype: 'playdate', repo: 'joyrider3774/blockdude_playdate',  output: 'blockdude',   binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: ''}
-          - { buildtype: 'playdate', repo: 'joyrider3774/puztrix_playdate',    output: 'puztrix',     binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: 'PUZTRIX_PLAYDATE_CODEKEY',  codesecretfile: 'src/codekey.h', makecommand: '"SRC_C_DIR=src/srcgame/scoresubmit/src/playdate/C_API/scoresubmit" "SRC_CPP_DIR=src/srcgame src/srcstub/sdl_rotate src/srcstub/gfx_primitives_surface src/srcstub/bump src/srcstub/bump/src src/srcstub src/srcstub/pd_api"'}
-          - { buildtype: 'playdate', repo: 'joyrider3774/puzzleland_playdate', output: 'puzzleland',  binarycopy: '', assetscopy: '', downloadsecret: 'PUZZLELAND_MUSIC', downloadsecretcmd: 'unzip download && mv music Source/music', codesecret: '', codesecretfile: '', makecommand: '"SRC_C_DIR=src/srcgame src/srcgame/gameobjects src/srcgame/gamestates" SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0' }
-          - { buildtype: 'playdate', repo: 'joyrider3774/rubido_playdate',     output: 'rubido',      binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
-          - { buildtype: 'playdate', repo: 'joyrider3774/waternet_playdate',   output: 'waternet',    binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: ''}
-          - { buildtype: 'playdate', repo: 'joyrider3774/worm_playdate',       output: 'worm',        binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: ''}
-          #- { buildtype: 'vanilla',  repo: 'joyrider3774/RetroTime',           output: 'retrotime',   binarycopy: 'retrotime', assetscopy: 'retrotimefs', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CXX=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-g++ NOX11=1 SDL2CONFIG=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config LDLIBS="`/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config --libs` -lSDL2_image -lSDL2_ttf -lSDL2_mixer -lSDL2_gfx -lSDL2 -lpthread -lstdc++" "DEFINES=-DRG35XX_PLUS_BATOCERA" FULLMENUTRANSPARANCY=1'}
-          - { buildtype: 'vanilla',  repo: 'joyrider3774/Znax',                output: 'znax',        binarycopy: 'znax',      assetscopy: 'znaxfs',      downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CXX=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-g++ NOX11=1 SDL2CONFIG=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config LDLIBS="`/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config --libs` -lSDL2_image -lSDL2_ttf -lSDL2_mixer -lSDL2_gfx -lSDL2 -lpthread -lstdc++" "DEFINES=-DRG35XX_PLUS_BATOCERA"'}
+          - { buildtype: 'playdate', repo: 'joyrider3774/formula1_playdate',   output: 'formula_1',  binary: 'game',      binaryparams: '-f',   binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: 'FORMULA1_PLAYDATE_CODEKEY', codesecretfile: 'src/codekey.h', makecommand: '"SRC_C_DIR=src/srcgame src/srcgame/scoresubmit" SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
+          - { buildtype: 'playdate', repo: 'joyrider3774/checkers_playdate',   output: 'checkers',   binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CPP_BUILD=1 SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
+          - { buildtype: 'playdate', repo: 'joyrider3774/dynamate_playdate',   output: 'dynamate',   binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CPP_BUILD=1 SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
+          - { buildtype: 'playdate', repo: 'joyrider3774/blockdude_playdate',  output: 'blockdude',  binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: ''}
+          - { buildtype: 'playdate', repo: 'joyrider3774/puztrix_playdate',    output: 'puztrix',    binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: 'PUZTRIX_PLAYDATE_CODEKEY',  codesecretfile: 'src/codekey.h', makecommand: '"SRC_C_DIR=src/srcgame/scoresubmit/src/playdate/C_API/scoresubmit" "SRC_CPP_DIR=src/srcgame src/srcstub/sdl_rotate src/srcstub/gfx_primitives_surface src/srcstub/bump src/srcstub/bump/src src/srcstub src/srcstub/pd_api"'}
+          - { buildtype: 'playdate', repo: 'joyrider3774/puzzleland_playdate', output: 'puzzleland', binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: 'PUZZLELAND_MUSIC', downloadsecretcmd: 'unzip download && mv music Source/music', codesecret: '', codesecretfile: '', makecommand: '"SRC_C_DIR=src/srcgame src/srcgame/gameobjects src/srcgame/gamestates" SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0' }
+          - { buildtype: 'playdate', repo: 'joyrider3774/rubido_playdate',     output: 'rubido',     binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
+          - { buildtype: 'playdate', repo: 'joyrider3774/waternet_playdate',   output: 'waternet',   binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: ''}
+          - { buildtype: 'playdate', repo: 'joyrider3774/worm_playdate',       output: 'worm',       binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: ''}
+          #- { buildtype: 'vanilla',  repo: 'joyrider3774/RetroTime',           output: 'retrotime',  binary: 'retrotime', binaryparams: '',  binarycopy: 'retrotime', assetscopy: 'retrotimefs', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CXX=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-g++ NOX11=1 SDL2CONFIG=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config LDLIBS="`/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config --libs` -lSDL2_image -lSDL2_ttf -lSDL2_mixer -lSDL2_gfx -lSDL2 -lpthread -lstdc++" "DEFINES=-DRG35XX_PLUS_BATOCERA" FULLMENUTRANSPARANCY=1'}
+          - { buildtype: 'vanilla',  repo: 'joyrider3774/Znax',                output: 'znax',       binary: 'znax',      binaryparams: '-r', binarycopy: 'znax',      assetscopy: 'znaxfs',      downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CXX=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-g++ NOX11=1 SDL2CONFIG=/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config LDLIBS="`/opt/aarch64-buildroot-linux-gnu_sdk-buildroot/aarch64-buildroot-linux-gnu/sysroot/usr/bin/sdl2-config --libs` -lSDL2_image -lSDL2_ttf -lSDL2_mixer -lSDL2_gfx -lSDL2 -lpthread -lstdc++" "DEFINES=-DRG35XX_PLUS_BATOCERA"'}
     
     runs-on: ubuntu-24.04
     steps:
@@ -92,24 +92,48 @@ jobs:
       - if: ${{ matrix.buildtype == 'playdate'}}
         name: Move Source Folder
         run: |
-          mv Source "./artifact_dir/${{ matrix.output }}"
+          mv Source "./artifact_dir/.${{ matrix.output }}"
       
-      - name: copy metadata
+      - name: create ${{matrix.output}}.sh general stuff
         run: |
-          cp -rf "tmp/metadata/rg35xxplusbatocera/." "./artifact_dir/"
-      
-      
+          echo "#!/bin/sh" > "./artifact_dir/${{matrix.output}}.sh"
+          echo ". /opt/muos/script/var/func.sh" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "HOME=\"\$(GET_VAR \"device\" \"board/home\")\"" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "export HOME"  >> "./artifact_dir/${{matrix.output}}.sh"
+          
+          echo "if [ \"\$(GET_VAR \"global\" \"boot/device_mode\")\" -eq 1 ]; then"  >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "SDL_HQ_SCALER=2" >> "./artifact_dir/${{matrix.output}}.sh"          
+          echo "SDL_ROTATION=0" >> "./artifact_dir/${{matrix.output}}.sh"          
+          echo "SDL_BLITTER_DISABLED=1" >> "./artifact_dir/${{matrix.output}}.sh" 
+          echo "else" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "SDL_HQ_SCALER=\"\$(GET_VAR \"device\" \"sdl/scaler\")\"" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "SDL_ROTATION=\"\$(GET_VAR \"device\" \"sdl/rotation\")\"" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "SDL_BLITTER_DISABLED=\"\$(GET_VAR \"device\" \"sdl/blitter_disabled\")\"" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "fi" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "export SDL_HQ_SCALER SDL_ROTATION SDL_BLITTER_DISABLED" >> "./artifact_dir/${{matrix.output}}.sh"
+
+          echo "SET_VAR \"system\" \"foreground_process\" \"${{ matrix.output }}\"" >> "./artifact_dir/${{matrix.output}}.sh"
+         
+          echo "SDL_GAMECONTROLLERCONFIG=\$(grep \"muOS-Keys\" \"/opt/muos/device/current/control/gamecontrollerdb_retro.txt\")" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "export SDL_GAMECONTROLLERCONFIG" >> "./artifact_dir/${{matrix.output}}.sh"
+          
+          echo "GAMEFOLDER=\$(dirname \"\$0\")/.${{matrix.output}}" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "cd \"\$GAMEFOLDER/bin\"" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "./${{matrix.binary}} ${{matrix.binaryparams}}" >> "./artifact_dir/${{matrix.output}}.sh"
+          
+          chmod +x "./artifact_dir/${{matrix.output}}.sh"
+
       - if: ${{ matrix.binarycopy != ''}}
         name: copy binary
         run: |
-          mkdir -p artifact_dir/${{ matrix.output }}
-          cp "tmp/${{ matrix.binarycopy}}" "./artifact_dir/${{ matrix.output }}/${{ matrix.binarycopy }}"
+          mkdir -p artifact_dir/.${{ matrix.output }}
+          cp "tmp/${{ matrix.binarycopy}}" "./artifact_dir/.${{ matrix.output }}/${{ matrix.binarycopy }}"
       
       - if: ${{ matrix.assetscopy != ''}}
         name: copy assets
         run: |
-          mkdir -p artifact_dir/${{ matrix.output }}
-          cp -Rf "tmp/${{ matrix.assetscopy}}" "./artifact_dir/${{ matrix.output }}"
+          mkdir -p artifact_dir/.${{ matrix.output }}
+          cp -Rf "tmp/${{ matrix.assetscopy}}" "./artifact_dir/.${{ matrix.output }}"
       
       - name: Store build
         uses: actions/upload-artifact@v4

@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - { buildtype: 'playdate', repo: 'joyrider3774/formula1_playdate',   output: 'formula_1',  binary: 'game',      binaryparams: '-f',   binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: 'FORMULA1_PLAYDATE_CODEKEY', codesecretfile: 'src/codekey.h', makecommand: '"SRC_C_DIR=src/srcgame src/srcgame/scoresubmit" SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
+          - { buildtype: 'playdate', repo: 'joyrider3774/formula1_playdate',   output: 'formula_1',  binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: 'FORMULA1_PLAYDATE_CODEKEY', codesecretfile: 'src/codekey.h', makecommand: '"SRC_C_DIR=src/srcgame src/srcgame/scoresubmit" SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
           - { buildtype: 'playdate', repo: 'joyrider3774/checkers_playdate',   output: 'checkers',   binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CPP_BUILD=1 SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
           - { buildtype: 'playdate', repo: 'joyrider3774/dynamate_playdate',   output: 'dynamate',   binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: 'CPP_BUILD=1 SCREENRESX=320 SCREENRESY=240 WINDOWSCALE=2 SCALINGMODE=0'}
           - { buildtype: 'playdate', repo: 'joyrider3774/blockdude_playdate',  output: 'blockdude',  binary: 'game',      binaryparams: '-f', binarycopy: '', assetscopy: '', downloadsecret: '', downloadsecretcmd: '', codesecret: '', codesecretfile: '', makecommand: ''}
@@ -60,7 +60,7 @@ jobs:
         run: |
           rm -rf ./src/srcgame
           mv tmp/src ./src/srcgame
-          cp -Rf tmp/Source/. ./Source
+          mv tmp/Source ./Source
      
       - if: ${{ (matrix.downloadsecret != '') && (matrix.downloadsecretcmd != '')}}
         name: run secret download
@@ -87,12 +87,12 @@ jobs:
           
       - name: prepare artificat directory
         run: |
-          mkdir -p "artifact_dir/.${{ matrix.output }}"
+          mkdir -p artifact_dir/.${{ matrix.output }}
      
       - if: ${{ matrix.buildtype == 'playdate'}}
         name: Move Source Folder
         run: |
-          cp -r Source/. "./artifact_dir/.${{ matrix.output }}/"
+          mv ./Source "./artifact_dir/.${{ matrix.output }}"
       
       - name: create ${{matrix.output}}.sh general stuff
         run: |
@@ -114,14 +114,14 @@ jobs:
       - if: ${{ matrix.binarycopy != ''}}
         name: copy binary
         run: |
-          mkdir -p "artifact_dir/.${{ matrix.output }}"
+          mkdir -p artifact_dir/.${{ matrix.output }}
           cp "tmp/${{ matrix.binarycopy}}" "./artifact_dir/.${{ matrix.output }}/${{ matrix.binarycopy }}"
       
       - if: ${{ matrix.assetscopy != ''}}
         name: copy assets
         run: |
-          mkdir -p "artifact_dir/.${{ matrix.output }}"
-          cp -Rf "tmp/${{ matrix.assetscopy}}" "./artifact_dir/.${{ matrix.output }}"
+          mkdir -p artifact_dir/.${{ matrix.output }}
+          cp -Rf "tmp/${{ matrix.assetscopy}}/." "./artifact_dir/.${{ matrix.output }}/"
       
       - name: Store build
         uses: actions/upload-artifact@v4

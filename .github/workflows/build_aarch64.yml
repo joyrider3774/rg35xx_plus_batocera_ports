@@ -92,7 +92,7 @@ jobs:
       - if: ${{ matrix.buildtype == 'playdate'}}
         name: Move Source Folder
         run: |
-          mv ./Source "./artifact_dir/.${{ matrix.output }}"
+          cp -Rf ./Source/. "./artifact_dir/.${{ matrix.output }}/"
       
       - name: create ${{matrix.output}}.sh general stuff
         run: |

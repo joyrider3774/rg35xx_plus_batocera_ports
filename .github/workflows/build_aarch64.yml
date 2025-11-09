@@ -126,5 +126,6 @@ jobs:
       - name: Store build
         uses: actions/upload-artifact@v4
         with:
+          include-hidden-files: true
           name: ${{ matrix.output }} - RG35XX_Plus_Batocera_cfw_aarch64
           path: artifact_dir/

@@ -122,7 +122,7 @@ jobs:
         name: copy assets
         run: |
           mkdir -p artifact_dir/.${{ matrix.output }}
-          cp -Rf "tmp/${{ matrix.assetscopy}}/." "./artifact_dir/.${{ matrix.output }}/"
+          cp -Rf "tmp/${{ matrix.assetscopy}}" "./artifact_dir/.${{ matrix.output }}"
       
       - name: Store build
         uses: actions/upload-artifact@v4

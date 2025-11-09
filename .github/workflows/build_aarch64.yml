@@ -60,7 +60,7 @@ jobs:
         run: |
           rm -rf ./src/srcgame
           mv tmp/src ./src/srcgame
-          mv tmp/Source ./Source
+          cp -Rf tmp/Source/. ./Source
      
       - if: ${{ (matrix.downloadsecret != '') && (matrix.downloadsecretcmd != '')}}
         name: run secret download

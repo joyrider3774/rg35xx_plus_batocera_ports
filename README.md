@@ -5,8 +5,8 @@ Builds of my games running on Muos custom firmwares
 
 ## Installing
 In general on muos cfw installations extract the zips you download from the [Release Section](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases) in the `roms/ports` folder.
-For example if you open `checkers - RG35XX_Plus_Batocera_cfw.zip` there will be a folder inside, in this example named
-`.checkers` and an sh file named `Checkers.sh` you need to copy that folder to the `roms/ports` folder of your muos custom Firmware.
+For example if you open `checkers - Muos_cfw_aarch64.zip` there will be a folder inside, in this example named
+`.checkers` and an sh file named `Checkers.sh` you need to copy that folder to the `roms/ports` folder of your muos custom Firmware and assign external script / ports core to that folder
 The playdate games will start up in 1 bit graphics mode, meaning black and white. To switch to the colored graphics press the `X` button. The game
 will rebooot and use colored graphics and remember this for the next time you start the game. Some games have multiple graphic options like `Waternet`
 and `Puztrix` if you press `X` again you will cycle through all the available options, each time restarting the game.

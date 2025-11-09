@@ -106,7 +106,7 @@ jobs:
           echo "SET_VAR \"system\" \"foreground_process\" \"${{ matrix.output }}\"" >> "./artifact_dir/${{matrix.output}}.sh"
           
           echo "GAMEFOLDER=\$(dirname \"\$0\")/.${{matrix.output}}" >> "./artifact_dir/${{matrix.output}}.sh"
-          echo "cd \"\$GAMEFOLDER/bin\"" >> "./artifact_dir/${{matrix.output}}.sh"
+          echo "cd \"\$GAMEFOLDER\"" >> "./artifact_dir/${{matrix.output}}.sh"
           echo "./${{matrix.binary}} ${{matrix.binaryparams}}" >> "./artifact_dir/${{matrix.output}}.sh"
           
           chmod +x "./artifact_dir/${{matrix.output}}.sh"

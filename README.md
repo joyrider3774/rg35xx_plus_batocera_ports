@@ -1,7 +1,7 @@
 # My Muos CFW games
 ![DownloadCountTotal](https://img.shields.io/github/downloads/joyrider3774/rg35xx_plus_batocera_ports/total?label=total%20downloads&style=plastic) ![DownloadCountLatest](https://img.shields.io/github/downloads/joyrider3774/rg35xx_plus_batocera_ports/latest/total?style=plastic) ![LatestVersion](https://img.shields.io/github/v/tag/joyrider3774/rg35xx_plus_batocera_ports?label=Latest%20version&style=plastic) ![License](https://img.shields.io/github/license/joyrider3774/rg35xx_plus_batocera_ports?style=plastic)
 
-Builds of my games running on rg35xx plus / h Batocera CFW
+Builds of my games running on Muos custom firmwares
 
 ## Installing
 In general on muos cfw installations extract the zips you download from the [Release Section](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases) in the `roms/ports` folder.

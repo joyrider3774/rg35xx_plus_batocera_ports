@@ -33,7 +33,7 @@ Please see respective repo of each game to get more information about the games 
 
 Blokdude is a remake of the well known TI Caluculator game from Brandon Sterner as well as the blockman game from Soleau Software. This version of the game is based on the GP2X port of blockdude i made over a decade ago.
 
-[Game Info](https://joyrider3774.github.io/blockdude_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/blockdude.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/blockdude_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/blockdude.-.Muos_cfw_aarch64.zip)
 
 ---
 
@@ -42,7 +42,7 @@ Blokdude is a remake of the well known TI Caluculator game from Brandon Sterner 
 
 Checkers is the well known board game with four difficulties and a jump heuristic. This version is port of my gp2x version made to work with the RG35xx plus running Batocera CFW handheld.
 
-[Game Info](https://joyrider3774.github.io/checkers_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/checkers.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/checkers_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/checkers.-.Muos_cfw_aarch64.zip)
 
 ---
 
@@ -51,7 +51,7 @@ Checkers is the well known board game with four difficulties and a jump heuristi
 
 Dynamate is a puzzle game invented by Björn Kalzen and Jonas Norberg, a couple of years ago i contacted them to make a port for the gp2x handheld. This version is port of my gp2x version made to work with the RG35xx plus running Batocera CFW handheld.
 
-[Game Info](https://joyrider3774.github.io/dynamate_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/dynamate.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/dynamate_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/dynamate.-.Muos_cfw_aarch64.zip)
 
 ---
 
@@ -60,7 +60,7 @@ Dynamate is a puzzle game invented by Björn Kalzen and Jonas Norberg, a couple 
 
 Formula 1 Game & Watch is a small, fictive formula 1 game & watch style lcd game with high score keeping. The Game was initially created over a decade ago for a small retrogame competition, after which it got ported to the gp2x. This version is based on the gp2x version but with added high score saving.
 
-[Game Info](https://joyrider3774.github.io/formula1_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/formula_1.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/formula1_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/formula_1.-.Muos_cfw_aarch64.zip)
 
 ---
 
@@ -69,7 +69,7 @@ Formula 1 Game & Watch is a small, fictive formula 1 game & watch style lcd game
 
 Rubido is a little chinese checkers or solitaire game with four difficulties.
 
-[Game Info](https://joyrider3774.github.io/rubido_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/rubido.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/rubido_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/rubido.-.Muos_cfw_aarch64.zip)
 
 ---
 
@@ -78,7 +78,7 @@ Rubido is a little chinese checkers or solitaire game with four difficulties.
 
 Puzzle Land is a remake of the gameboy game Daedalian opus also known as puzzle road in japan. The gameplay and levels are the same but the graphics, music sounds have changed. It's a puzzle game with 36 levels. It is a tribute to a game i spend endless hours playing as a child.
 
-[Game Info](https://joyrider3774.github.io/puzzleland_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/puzzleland.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/puzzleland_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/puzzleland.-.Muos_cfw_aarch64.zip)
 
 ---
 
@@ -87,7 +87,7 @@ Puzzle Land is a remake of the gameboy game Daedalian opus also known as puzzle 
 
 Puztrix is a remake of the Gravnic game from inside the NES Puzznic game.
 
-[Game Info](https://joyrider3774.github.io/puztrix_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/puztrix.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/puztrix_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/puztrix.-.Muos_cfw_aarch64.zip)
 
 ---
 
@@ -96,7 +96,7 @@ Puztrix is a remake of the Gravnic game from inside the NES Puzznic game.
 
 RetroTime is a game containing 8 retro based games playable in 3 game modes being Retro Carousel, Time Attack and Lives mode. The game is a port from my competetion entry for Fuze 4 for Nintendo switch, in colleboration Wireframe magazine.
 
-[Game Info](https://joyrider3774.github.io/RetroTime) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/retrotime.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/RetroTime) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/retrotime.-.Muos_cfw_aarch64.zip)
 
 ---
 
@@ -105,7 +105,7 @@ RetroTime is a game containing 8 retro based games playable in 3 game modes bein
 
 Waternet is a multiplatform puzzle game written for old consoles and handhelds like Game Boy (Color), Game Gear, Master System, Analogue Pocket and Mega Duck and now also RG35xx plus running Batocera CFW! It's a combination of the net and netslide games from the simon tatham's puzzle collection!
 
-[Game Info](https://joyrider3774.github.io/waternet_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/waternet.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/waternet_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/waternet.-.Muos_cfw_aarch64.zip)
 
 ---
 
@@ -114,7 +114,7 @@ Waternet is a multiplatform puzzle game written for old consoles and handhelds l
 
 Worm is a copter / worm game remake with 5 game modes and a seed system written for playdate
 
-[Game Info](https://joyrider3774.github.io/worm_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/worm.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/worm_playdate) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/worm.-.Muos_cfw_aarch64.zip)
 
 ---
 
@@ -123,6 +123,6 @@ Worm is a copter / worm game remake with 5 game modes and a seed system written 
 
 Znax is a cross platform puzzle / arcade game using SDL2 libraries. It has skin support and can be played using a keyboard, mouse, joypad or touchscreen. You select 4 of the same colored pieces forming a rectangle to gain scores and remove the pieces inside the rectangle!
 
-[Game Info](https://joyrider3774.github.io/Znax) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/znax.-.RG35XX_Plus_Batocera_cfw.zip)
+[Game Info](https://joyrider3774.github.io/Znax) - [Download for Muos CFW](https://github.com/joyrider3774/rg35xx_plus_batocera_ports/releases/latest/download/znax.-.Muos_cfw_aarch64.zip)
 
 

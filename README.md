@@ -73,7 +73,7 @@ Mazethingie which is a maze generator / player.
 
 ---
 
-## Playdoban
+## Playdoban (Playdate)
 ![Playdoban Screenshot 1](https://raw.githubusercontent.com/joyrider3774/sokoban_playdate/main/screenshots/screenshot1.png) ![Playdoban Screenshot 2](https://raw.githubusercontent.com/joyrider3774/sokoban_playdate/main/screenshots/screenshot2.png)
 
 Playdoban is a remake of the classic sokoban game. You as the player need to push boxes to specific locations in the level. Once all boxes are pushed to the correct spots the level is finished. Playdoban is basically a sokoban engine, it contains all the game rules and has the ability to use level packs.
